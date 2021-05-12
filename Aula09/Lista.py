@@ -53,15 +53,12 @@ class Lista:
                 x = 2
                 while( aux != None ) :
                     if aux.dado == valor : 
-                        #print( "x: ", x)
                         anterior.proximo = aux.proximo
-                        #print( "Anterior: " , anterior.dado )
-
                         self.tamanho -= 1
                     else:
                         anterior = aux
                     aux = aux.proximo
-                    #x += 1
+                    
 
             if tamAnterior == self.tamanho :
                 print("Valor não encontrado!")
